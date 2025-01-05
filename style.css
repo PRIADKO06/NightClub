@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'); 
+ 
+body { 
+    background-color: blueviolet; 
+    font-family: 'Montserrat', sans-serif; 
+    color: white; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: mediumorchid; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+} 
+ 
+/* Логотип */ 
+.p1 { 
+    width: 90px; 
+    height: 40px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-right: 20px; 
+} 
+ 
+/* Навігація */ 
+.nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    padding-left: 50px; 
+} 
+ 
+.nav-link { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: color 0.3s; 
+    margin-right: 50px; 
+} 
+ 
+.nav-link:hover { 
+    color: gold; 
+} 
+ 
+h1, h3 { 
+    color: gold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+} 
+ 
+.cVse, .vse { 
+    margin: 20px auto; 
+    max-width: 1200px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+} 
+ 
+button { 
+    background-color: rgb(68, 8, 95); 
+    border: none; 
+    border-radius: 30px; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+} 
+ 
+button:hover { 
+    background-color: rgb(88, 10, 125); 
+    transform: scale(1.05); 
+} 
+ 
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */ 
+    backdrop-filter: blur(5px); /* Ефект розмиття заднього фону */ 
+} 
+ 
+.modal-content { 
+    background: linear-gradient(135deg, mediumorchid, blueviolet); 
+    color: white; 
+    margin: 10% auto; 
+    padding: 30px; 
+    border-radius: 20px; 
+    width: 50%; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+    text-align: center; 
+    animation: slide-down 0.5s ease-out; /* Анімація */ 
+} 
+ 
+.modal-content h3 { 
+    font-size: 24px; 
+    color: gold; 
+    margin-bottom: 20px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+} 
+ 
+.modal-content p { 
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin: 10px 0; 
+    color: #f0f0f0; 
+} 
+ 
+.close { 
+    position: absolute; 
+    top: 15px;  
+    right: 15px;  
+    font-size: 30px; 
+    color: white; 
+    cursor: pointer; 
+    transition: color 0.3s; 
+    z-index: 10;  
+} 
+ 
+.close:hover { 
+    color: gold; 
+} 
+ 
+/* Анімація */ 
+@keyframes slide-down { 
+    from { 
+        transform: translateY(-50px); 
+        opacity: 0; 
+    } 
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    } 
+} 
+.pic { 
+    display: flex; 
+    justify-content: space-around; 
+} 
+ 
+.p2 { 
+    border-radius: 15%; 
+} 
+.p3 { 
+    border-radius: 15%; 
+} 
+.p4 { 
+    border-radius: 15%; 
+} 
+    
+html { 
+    scroll-behavior: smooth; 
+} 
+.y { 
+   font-size: 20px; 
+} 
+h2 { 
+    font-size: 50px; 
+    color: gold; 
+} 
+.s { 
+    font-size: 19px; 
+}
