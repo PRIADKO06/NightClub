@@ -142,6 +142,7 @@ button:hover {
         opacity: 1; 
     } 
 } 
+
 .pic { 
     display: flex; 
     justify-content: space-around; 
@@ -160,13 +161,87 @@ button:hover {
 html { 
     scroll-behavior: smooth; 
 } 
+
 .y { 
-   font-size: 20px; 
+    font-size: 20px; 
 } 
+
 h2 { 
     font-size: 50px; 
     color: gold; 
 } 
+
 .s { 
     font-size: 19px; 
+}
+
+/* Адаптивна верстка для мобільних пристроїв */
+
+@media (max-width: 768px) {
+    .nav {
+        padding-left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .p1 {
+        width: 80px;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 80%;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h3, h2 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .close {
+        font-size: 25px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .pic {
+        flex-direction: column;
+        align-items: center;
+    }
 }
